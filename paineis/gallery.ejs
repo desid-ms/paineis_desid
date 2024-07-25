@@ -1,0 +1,21 @@
+```{=html}
+<div class="list grid" style="column-gap: 10px">
+  <% for (const item of items) { %> <% for (const tile of item.tiles) { %>
+ 
+    <div class="card g-col-12 g-col-sm-6 g-col-md-4 mb-2">
+      <img
+        src="<%- tile.thumbnail %>"
+        alt="<%- tile.description %>"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <h5 class="card-title"><%= tile.title %></h5>
+        <p class="card-text"><%= tile.description %></p>
+        <a href="<%- tile.href %>" class="btn btn-primary">Acessar</a>
+      </div>
+    </div>
+ 
+  <% } %> <% } %>
+</div>
+
+```

@@ -1,0 +1,21 @@
+---
+title: Bases de Dados
+title-block-banner: true
+page-layout: full
+editor:
+    render-on-save: true
+listing:
+  sort: "date desc"
+  contents: 
+    - ./*/index.qmd
+    - ./*.qmd
+  fields: [date, title, author, description, categories]
+  sort-ui: false
+  filter-ui: false
+  categories: true
+  feed: false
+comments: false
+format:
+  html: 
+    toc: false
+---

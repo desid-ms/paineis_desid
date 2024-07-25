@@ -1,0 +1,21 @@
+---
+title: Análises
+title-block-banner: true
+page-layout: full
+margin-header: _insights.qmd
+editor:
+    render-on-save: true
+listing:
+  sort: "date desc"
+  contents: ./[a-z]*.qmd
+  sort-ui: false
+  filter-ui: false
+  categories: true
+  feed: false
+---
+
+<!-- ::: { style="color: #316e6b"} -->
+
+## Últimas publicações
+
+****

@@ -1,0 +1,12 @@
+---
+title: Painéis
+title-block-banner: true
+page-layout: full
+editor:
+    render-on-save: true
+listing:
+  - id: dashboards
+    template: gallery.ejs
+    contents: gallery.yml
+---
+

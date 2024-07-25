@@ -1,0 +1,11 @@
+- category: Categoria
+  tiles:
+    - title: Painel Novo PAC
+      descrition: "Indicadores da saúde relevantes para o Novo PAC."
+      href: https://app.powerbi.com/groups/me/reports/30e48167-c66b-4ebf-bac6-c3d65c9a673b/ReportSection?ctid=9a554ad3-b52b-4862-a36f-84d891e5c705&experience=power-bi
+      thumbnail: ../images/painel_novopac.png
+    - title: Painel de dados estratégicos CGEDS
+      description: |
+        Descrição do painel estratégico.
+      href: https://app.powerbi.com/groups/me/reports/30e48167-c66b-4ebf-bac6-c3d65c9a673b/ReportSection?ctid=9a554ad3-b52b-4862-a36f-84d891e5c705&experience=power-bi
+      thumbnail: ../images/painel_cgeds.png

@@ -1,0 +1,29 @@
+project:
+  type: website
+
+website:
+  bread-crumbs: false
+  back-to-top-navigation: true
+  page-navigation: true
+  search: false
+  navbar:
+    background: light
+    logo: images/painel-desid.svg
+    logo-alt: "Painel Desid logo."
+    collapse-below: lg
+    left:
+      - analises/index.qmd
+      - paineis/index.qmd
+      - bases/index.qmd
+  
+format:
+  html:
+    editor:
+      render-on-save: true
+    theme: desid.scss
+    lang: pt-br
+    language:
+      listing-page-field-categories: "Domínios"
+    default-image-extension: svg
+    grid:
+      margin-width: 350px

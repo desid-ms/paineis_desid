@@ -1,0 +1,12 @@
+---
+# title: DESID
+# subtitle: |
+#     O DESID publica relatórios, notas técnias, tabelas de dados e outros recursos importantes que utilizam dados coletados de sistemas mantidos pelo Ministério da Saúde e outras fontes públicas de informação. 
+# title-block-banner: true
+page-layout: full
+aliases:
+    - analises/index.qmd
+editor:
+    render-on-save: true
+---
+

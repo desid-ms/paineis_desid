@@ -1,0 +1,595 @@
+/*-- scss:defaults --*/
+
+$theme: "desid" !default;
+
+//
+// Color system
+//
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #f8f7f4 !default;
+$gray-300: #dfd7ca !default;
+$gray-400: #ced4da !default;
+$gray-500: #98978b !default;
+$gray-600: #8e8c84 !default;
+$gray-700: #495057 !default;
+$gray-800: #3e3f3a !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #325d88 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #d9534f !default;
+$orange:  #f47c3c !default;
+$yellow:  #ffc107 !default;
+$green:   #93c54b !default;
+$teal:    #20c997 !default;
+$cyan:    #29abe0 !default;
+
+$primary: $blue !default;;
+$secondary: #6E3154 !default;;
+$success: #316E6B !default;
+$info:          $cyan !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+$light:         $gray-200 !default;
+$dark:          $gray-800 !default;
+
+$min-contrast-ratio:   2 !default;
+
+// Body
+
+$body-color:                $gray-800 !default;
+
+// Links
+
+$link-color:                $success !default;
+
+// Fonts
+
+// stylelint-disable-next-line value-keyword-case
+$font-family-sans-serif:      Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$headings-font-family:        Montserrat, "Helvetica Neue", Helvetica, Arial;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$headings-font-weight:        400 !default;
+// $h1-font-size:  2.5em !default;
+// $h2-font-size:  1.85em !default;
+// $h3-font-size:  1.15em !default;
+$h3-font-color: $secondary;
+// Dropdowns
+
+$dropdown-link-color:               $gray-600 !default;
+$dropdown-link-hover-color:         $dropdown-link-color !default;
+$dropdown-link-hover-bg:            $gray-200 !default;
+$dropdown-link-active-color:        $dropdown-link-color !default;
+$dropdown-link-active-bg:           $dropdown-link-hover-bg !default;
+
+// Navs
+$nav-link-font-size:  1.4rem !default;
+$nav-link-font-weight:  500;
+$nav-link-font-family: $headings-font-family;
+$nav-link-padding-x:                .9rem !default;
+$nav-link-disabled-color:           $gray-300 !default;
+$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-link-hover-border-color:  $gray-300 !default;
+$nav-tabs-link-active-bg:           $white !default;
+$nav-pills-link-active-color:       $gray-600 !default;
+$nav-pills-link-active-bg:          $gray-200 !default;
+
+// Navbar
+$navbar-padding-y:  2rem;
+$navbar-padding-x:  0rem;
+$navbar-border: 0px;
+
+// Pagination
+
+$pagination-color:                  $gray-600 !default;
+$pagination-bg:                     $gray-200 !default;
+$pagination-border-color:           $gray-300 !default;
+$pagination-hover-color:            $pagination-color !default;
+$pagination-active-color:           $pagination-color !default;
+$pagination-active-bg:              $gray-300 !default;
+$pagination-active-border-color:    $gray-300 !default;
+$pagination-disabled-color:         $gray-300 !default;
+$pagination-disabled-bg:            $gray-200 !default;
+$pagination-disabled-border-color:  $pagination-border-color !default;
+
+// Cards
+
+$card-border-color:                 rgba($gray-300, .75) !default;
+$card-cap-bg:                       rgba($gray-200, .25) !default;
+
+// Popovers
+
+$popover-header-bg:                 $gray-200 !default;
+
+// Modals
+
+$modal-content-border-color:        $gray-300 !default;
+$modal-header-border-color:         $modal-content-border-color !default;
+
+// Progress bars
+
+$progress-bg:                       $gray-300 !default;
+$progress-border-radius:            10px !default;
+$progress-bar-color:                $primary !default;
+
+// List group
+
+$list-group-border-color:           $gray-300 !default;
+$list-group-hover-bg:               $gray-200 !default;
+$list-group-active-color:           $body-color !default;
+$list-group-active-bg:              $gray-200 !default;
+$list-group-active-border-color:    $gray-300 !default;
+$list-group-disabled-color:         $gray-500 !default;
+$list-group-disabled-bg:            $white !default;
+$list-group-action-color:           $list-group-active-color !default;
+$list-group-action-active-color:    $list-group-active-color !default;
+$list-group-action-active-bg:       $gray-300 !default;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              .375rem !default;
+$breadcrumb-padding-x:              .75rem !default;
+$breadcrumb-bg:                     $pagination-bg !default;
+$breadcrumb-border-radius:          .25rem !default;
+
+.breadcrumb {
+  padding-left: 1.5rem !important;
+  margin-top: -2em !important;
+}
+
+// Close
+
+$btn-close-color:            $white !default;
+$btn-close-opacity:          .8 !default;
+$btn-close-hover-opacity:    1 !default;
+$btn-font-family: Montserrat, "Helvetica Neue", Helvetica, Arial;
+
+$link-hover-decoration: underline;
+
+/*-- scss:rules --*/
+
+
+// Variables
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" !default;
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+// Navbar
+
+.desid {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+// .navbar {
+//   .nav-link {
+//     @extend .desid;
+//   }
+
+//   &-form input,
+//   &-form .form-control {
+//     border: none;
+//   }
+// }
+
+// Buttons
+
+.btn {
+  @extend .desid;
+
+  &:hover {
+    border-color: transparent;
+  }
+
+  &-success,
+  &-warning {
+    color: $white;
+  }
+}
+
+// Tables
+
+.table {
+  .thead-dark th {
+    background-color: $dark;
+  }
+}
+
+// Forms
+
+input,
+.form-control {
+  @include box-shadow(none);
+
+  &:focus {
+    @include box-shadow(none);
+  }
+}
+
+// Navs
+
+.nav-tabs {
+  .nav-link {
+    @extend .desid;
+    background-color: $gray-200;
+    border-color: $gray-300;
+  }
+
+  .nav-link,
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $gray-600;
+  }
+
+  .nav-link.disabled,
+  .nav-link.disabled:hover,
+  .nav-link.disabled:focus {
+    color: $nav-link-disabled-color;
+    background-color: $gray-200;
+    border-color: $gray-300;
+  }
+}
+
+.nav-pills {
+  .nav-link {
+    @extend .desid;
+    color: $gray-600;
+    border: 1px solid transparent;
+  }
+
+  .nav-link.active,
+  .nav-link:hover,
+  .nav-link:focus {
+    background-color: $gray-200;
+    border-color: $gray-300;
+  }
+
+  .nav-link.disabled,
+  .nav-link.disabled:hover {
+    color: $gray-300;
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+.navbar-nav .nav-item {
+  padding-left: 0px;
+  padding-right: 3rem; // Adjust right padding as needed
+.nav-link {
+  &.active {
+      text-decoration: underline;
+      text-decoration-color: $secondary;
+      // text-decoration-color: $primary;
+      text-decoration-thickness: 5px; // Adjust thickness as needed
+      text-underline-offset: .5rem; // Increase or adjust the offset to control the distance
+
+  }
+}
+}
+
+
+
+.breadcrumb {
+  @extend .desid;
+  border: 1px solid $gray-300;
+}
+
+.pagination {
+  @extend .desid;
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.dropdown-menu {
+  .dropdown-item {
+    @extend .desid;
+  }
+}
+
+// Indicators
+
+.alert {
+  color: $white;
+
+  a,
+  .alert-link {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  &-primary {
+    &,
+    > th,
+    > td {
+      background-color: $primary;
+    }
+  }
+
+  &-secondary {
+    &,
+    > th,
+    > td {
+      background-color: $secondary;
+    }
+  }
+
+  &-success {
+    &,
+    > th,
+    > td {
+      background-color: $success;
+    }
+  }
+
+  &-info {
+    &,
+    > th,
+    > td {
+      background-color: $info;
+    }
+  }
+
+  &-danger {
+    &,
+    > th,
+    > td {
+      background-color: $danger;
+    }
+  }
+
+  &-warning {
+    &,
+    > th,
+    > td {
+      background-color: $warning;
+    }
+  }
+
+  &-dark {
+    &,
+    > th,
+    > td {
+      background-color: $dark;
+    }
+  }
+
+  &-light {
+    &,
+    > th,
+    > td {
+      background-color: $light;
+    }
+
+    &,
+    a:not(.btn),
+    .alert-link {
+      color: $body-color;
+    }
+  }
+}
+
+.badge {
+  &.bg-light {
+    color: $dark;
+  }
+}
+
+.tooltip {
+  @extend .desid;
+}
+
+// Containers
+
+.modal,
+.toast,
+.offcanvas {
+  .btn-close {
+    background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$gray-300}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>"));
+  }
+}
+
+
+// ================================================
+// Custom styles for the Quarto theme
+
+
+.container, .container-fluid {
+  padding: 0px !important;
+  
+}
+
+div.callout-important {
+  border-left-color: $secondary !important;
+  background-color: $light;
+  
+
+}
+.callout-header {
+  background-color: $secondary !important;
+  opacity: 100% !important;
+  color: white;
+  font-weight: 500 !important;
+  font-size: 1.4rem !important;
+}
+
+.callout.callout-style-default {
+  border-left: 1px solid $secondary !important;
+  border-right: 1px solid $secondary !important;
+  border-top: 1px !important;
+  border-bottom: 1px solid $secondary !important;
+}
+div.callout-body-container.callout-body > ul {
+  padding-top:2em !important;
+  list-style-type: none;
+  font-size: 1.2rem;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+div.callout-body-container.callout-body > ul > li{
+  padding-bottom: .8em !important;
+  
+}
+
+
+
+
+
+#quarto-header {
+  // Ensure the container is capable of containing floated elements
+  // overflow: auto;
+  // margin-top:-5px;
+  // Set the background image to the logo
+  // background-image: url('images/painel-desid.svg');
+  // background-color: $light;
+  // background-repeat: no-repeat; // Ensure the image doesn't repeat
+  // background-position: right center; // Position the image on the right side and vertically centered
+  // background-size: 230px 114px; // Adjusts the image size to make sure the image is fully visible within the element.
+  // padding-right: 230px;
+  // border-bottom: 2px solid #eae7e4;
+  // z-index:2000;
+  // border: 0px;
+  border-bottom: 5px solid #f8f7f4;
+}
+
+
+.quarto-title-banner {
+  // background: transparent !important;
+  padding-top: 1.5em !important;
+  padding-bottom: 1.5em !important;
+  border-bottom: 2px solid #eae7e4;
+}
+
+.panel-tabset .nav-link {
+  font-size: 16px;
+}
+.quarto-title-banner h2, .quarto-title-banner .h2 {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: -2px;
+  margin-bottom: 0px;
+  z-index: 3000;
+}
+
+#title-block-header {
+  margin-top:-6px !important;
+  position: sticky !important; // Change from relative to sticky
+  top: 0  !important; // Ensure it sticks to the top
+  // background-color: $light !important; // Optional for visibility
+  color: #555453;
+  z-index: 9000;
+  // border-bottom: 2px solid #eae7e4;
+}
+
+@media (max-width: 768px) {
+  #title-block-header {
+    background-color: transparent;
+    border-bottom: none;
+    z-index: 0; /* Change z-index for mobile devices */
+  }
+  .quarto-title-banner {
+    background: transparent !important;
+    // padding-top: 1.5em !important;
+    // padding-bottom: 1.5em !important;
+    border-bottom: none;
+  }
+
+
+
+}
+
+
+.sticky-title {
+  margin-top: -2.5em;
+  padding-top: 0em !important;
+  padding-bottom: .5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: $light !important;
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  h1 {
+      font-size:large;
+  }
+  .subtitle {
+      font-size: small;
+      font-family: monospace;
+  }
+  .description {
+      font-size: smaller;
+  }
+}
+
+.quarto-title-meta {
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr) 1fr 1fr;
+  grid-column-gap: 1em;
+}
+
+.quarto-title-meta-heading {
+  font-size: smaller;
+}
+.quarto-title-meta-contents {
+  font-family: monospace;
+  font-size: small;
+  padding-bottom: 1em;
+}
+
+
+// dbt
+.app-navbar {
+  display: none !important;
+}
+.app-body .menu {
+  display: none !important;
+}
+
+.navbar {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  // border-bottom: 2px solid #eae7e4;
+
+}
+.navbar-container {
+  position: unset; // Set the parent to relative positioning
+
+  // &::before {
+  //     // content: "Evidências econômicas qualificadas a serviço do SUS"; // Define the text to display
+  //     position: absolute;
+  //     top: -2rem; // Adjust top and left as needed
+  //     left: .75rem;
+  //     color: $secondary;
+  //     opacity: 60%; // Set text color
+  //     padding: 0px; // Optional: some padding around the text
+  //     z-index: 10; // Ensure the text is above other content
+  // }
+  // @media (max-width: 992px) { // Common 'lg' breakpoint
+  //     &::before {
+  //         display: none; // Hide the ::before content on large screens
+  //     }
+  // }
+}
+.navbar-logo {
+  position: absolute;
+  top:0px;
+  right: 0px;
+  width: 230px;
+  height: 114px;
+  max-height: 100px;
+  padding-right: 0px;
+}
+
+
