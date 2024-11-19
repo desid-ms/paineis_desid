@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/paineis/index.html",
+    "items": []
+  },
+  {
+    "listing": "/analises/index.html",
+    "items": []
+  },
+  {
+    "listing": "/bases/index.html",
+    "items": [
+      "/bases/siops.html"
+    ]
+  }
+]
