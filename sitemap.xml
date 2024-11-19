@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://desid-ms.github.io/paineis_desid/paineis/painel_novo_pac.html</loc>
+    <lastmod>2024-11-19T19:04:58.119Z</lastmod>
+  </url>
+  <url>
     <loc>https://desid-ms.github.io/paineis_desid/paineis/index.html</loc>
-    <lastmod>2024-11-19T19:05:54.355Z</lastmod>
-  </url>
-  <url>
-    <loc>https://desid-ms.github.io/paineis_desid/paineis/painel_estrategico_cgeds.html</loc>
-    <lastmod>2024-11-19T19:05:54.355Z</lastmod>
-  </url>
-  <url>
-    <loc>https://desid-ms.github.io/paineis_desid/analises/index.html</loc>
-    <lastmod>2024-11-19T19:05:54.339Z</lastmod>
+    <lastmod>2024-11-19T19:04:58.118Z</lastmod>
   </url>
   <url>
     <loc>https://desid-ms.github.io/paineis_desid/bases/index.html</loc>
-    <lastmod>2024-11-19T19:05:54.343Z</lastmod>
+    <lastmod>2024-11-19T19:04:58.099Z</lastmod>
+  </url>
+  <url>
+    <loc>https://desid-ms.github.io/paineis_desid/analises/index.html</loc>
+    <lastmod>2024-11-19T19:04:58.099Z</lastmod>
   </url>
   <url>
     <loc>https://desid-ms.github.io/paineis_desid/bases/siops.html</loc>
-    <lastmod>2024-11-19T19:05:54.343Z</lastmod>
+    <lastmod>2024-11-19T19:04:58.099Z</lastmod>
   </url>
   <url>
     <loc>https://desid-ms.github.io/paineis_desid/index.html</loc>
-    <lastmod>2024-11-19T19:05:54.351Z</lastmod>
+    <lastmod>2024-11-19T19:04:58.118Z</lastmod>
   </url>
   <url>
-    <loc>https://desid-ms.github.io/paineis_desid/paineis/painel_novo_pac.html</loc>
-    <lastmod>2024-11-19T19:05:54.355Z</lastmod>
+    <loc>https://desid-ms.github.io/paineis_desid/paineis/painel_estrategico_cgeds.html</loc>
+    <lastmod>2024-11-19T19:04:58.119Z</lastmod>
   </url>
 </urlset>

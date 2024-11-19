@@ -4,13 +4,13 @@
     "items": []
   },
   {
-    "listing": "/analises/index.html",
-    "items": []
-  },
-  {
     "listing": "/bases/index.html",
     "items": [
       "/bases/siops.html"
     ]
+  },
+  {
+    "listing": "/analises/index.html",
+    "items": []
   }
 ]

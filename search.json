@@ -1,24 +1,24 @@
 [
   {
+    "objectID": "paineis/painel_novo_pac.html",
+    "href": "paineis/painel_novo_pac.html",
+    "title": "Painel Novo PAC",
+    "section": "",
+    "text": "De volta ao topo"
+  },
+  {
     "objectID": "paineis/index.html",
     "href": "paineis/index.html",
     "title": "Painéis",
     "section": "",
-    "text": "Painel Novo PAC\n        \n        Acessar\n      \n    \n \n  \n \n    \n      \n      \n        Painel de dados estratégicos CGEDS\n        Descrição do painel estratégico.\n\n        Acessar\n      \n    \n \n   \n\n\n\nNenhum item correspondente\n\n De volta ao topo"
-  },
-  {
-    "objectID": "paineis/painel_estrategico_cgeds.html",
-    "href": "paineis/painel_estrategico_cgeds.html",
-    "title": "Dashboard 2",
-    "section": "",
-    "text": "dash 2\n\n\n\n De volta ao topo"
+    "text": "Painel Novo PAC\n        \n        Acessar\n      \n    \n \n  \n \n    \n      \n      \n        Painel de dados estratégicos CGEDS\n        Descrição do painel estratégico.\n\n        Acessar\n      \n    \n \n   \n\n\n\nSem itens correspondentes\n\n De volta ao topo"
   },
   {
     "objectID": "bases/index.html",
     "href": "bases/index.html",
     "title": "Bases de Dados",
     "section": "",
-    "text": "Base de Dados SIOPS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNenhum item correspondente\n\n De volta ao topo"
+    "text": "Base de Dados SIOPS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSem itens correspondentes\n\n De volta ao topo"
   },
   {
     "objectID": "bases/siops.html",
@@ -35,10 +35,10 @@
     "text": "De volta ao topo"
   },
   {
-    "objectID": "paineis/painel_novo_pac.html",
-    "href": "paineis/painel_novo_pac.html",
-    "title": "Painel Novo PAC",
+    "objectID": "paineis/painel_estrategico_cgeds.html",
+    "href": "paineis/painel_estrategico_cgeds.html",
+    "title": "Dashboard 2",
     "section": "",
-    "text": "De volta ao topo"
+    "text": "dash 2\n\n\n\n De volta ao topo"
   }
 ]
